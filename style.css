@@ -1,3 +1,10 @@
+/* コマンド */
+.hidden{
+    visibility: hidden;
+}
+
+/* 全体 */
+
 body{
     margin: 0;
 }
