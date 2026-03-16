@@ -210,7 +210,9 @@ footer{
         transition: .3s;
     }
     .nav-head{
-        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         background: #eee;
         animation: fade-in .5s;
     }
