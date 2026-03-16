@@ -223,6 +223,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding-bottom: 12px;
         background: #eee;
         animation: fade-in .5s;
     }
