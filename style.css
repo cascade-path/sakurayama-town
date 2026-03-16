@@ -147,6 +147,7 @@ footer{
     justify-items: center;
     background: #fff;
     border: solid #000 5px;
+    padding: 1em;
 }
 .alert.active{
     display: grid;
