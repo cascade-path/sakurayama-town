@@ -152,6 +152,9 @@ footer{
 .alert.active{
     display: grid;
 }
+.alert-modal button{
+    cursor: pointer;
+}
 
 /* スマホ対応(ハンバーガーメニュー) */
 @media screen and (max-width: 500px) {
