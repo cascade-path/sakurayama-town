@@ -104,7 +104,11 @@
             // modalAlertText.
         }
 
-        navLink
+        navLink.forEach(link => {
+            link.addEventListener("click",() => {
+                modalAlertActive();
+            });
+        });
     </script>
 </body>
 </html>
