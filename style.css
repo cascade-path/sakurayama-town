@@ -14,11 +14,11 @@ header h1{
 }
 .header-logo-l{
     max-width: 200px;
-    max-height: 100px;
+    max-height: 80px;
 }
 .header-logo-s{
     max-width: 200px;
-    max-height: 100px;
+    max-height: 80px;
 }
 
 .hamburger{
