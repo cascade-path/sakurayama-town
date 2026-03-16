@@ -1,0 +1,191 @@
+body{
+    margin: 0;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    background: #eee;
+}
+header h1{
+    grid-row: 1;
+    grid-column: 1/3;
+    margin: 0;
+}
+
+.hamburger{
+    display: none;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    margin: 5px;
+    cursor: pointer;
+}
+.ham-line{
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background: #000;
+    box-shadow: 3px 3px 4px #000;
+    transform: scale(var(--scale)) translateY(var(--translate)) rotate(var(--rotate));
+    transition: .5s;
+    --scale: 1;
+    --translate: 0;
+    --rotate: 0;
+}
+.ham-line.open-x{
+    height: 1.41px;
+    transform: scale(var(--scale-x)) translateY(var(--translate-x)) rotate(var(--rotate-x));
+}
+.ham-line:nth-child(1){
+    --translate: -.7em;
+}
+.ham-line:nth-child(3){
+    --translate: .7em;
+}
+.open-x .ham-line:nth-child(1){
+    --scale: 1.4;
+    --translate: 0;
+    --rotate: 45deg;
+}
+.open-x .ham-line:nth-child(2){
+    --scale:0,1;
+}
+.open-x .ham-line:nth-child(3){
+    --scale: 1.4;
+    --translate: 0;
+    --rotate: -45deg;
+}
+
+.carousel{
+    display: flex;
+    justify-content: center;
+    background: #000;
+}
+.carousel-area{
+    position: relative;
+    grid-auto-flow: column;
+    aspect-ratio: 3/2;
+    width: clamp(300px,70vw,600px);
+    overflow: hidden;
+    background: #ccc;
+}
+.carousel img{
+    position: absolute;
+    inset: 0;
+    background: #888;
+    translate: -100%;
+    transition: .5s;
+}
+.carousel img.active{
+    translate: 0;
+    z-index: 1;
+}
+.carousel img.next{
+    translate: 100%;
+    z-index: -1;
+}
+
+nav{
+    display: grid;
+    grid-auto-flow: column;
+    height: 2.5em;
+    font-size: 1.2em;
+}
+nav .nav-link{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: #ccc;
+    text-shadow: 0 0 red;
+    border: outset 2px;
+    cursor: pointer;
+}
+.nav-head{
+    display: none;
+}
+nav .nav-link:hover{
+    text-shadow: 2px 2px #66f;
+    transition: .3s;
+}
+
+
+main{
+    display: grid;
+    max-width: 600px;
+    margin: 0 auto;
+    padding:0 30px;
+}
+main .news{
+    display: grid;
+    gap: 3px;
+    background: blue;
+}
+.news-link{
+    background: #eee;
+}
+
+footer{
+    height: 50px;
+    background: #ccc;
+}
+
+/* スマホ対応(ハンバーガーメニュー) */
+@media screen and (max-width: 500px) {
+    .hamburger{
+        display: flex;
+    }
+
+    #nav-wrap{
+        display: none; /* ハンバーガーメニューを消しておく */
+        position: fixed;
+        inset: 0;
+        z-index: 10;
+        background: rgba(0,0,0,.3);
+    }
+    #nav-wrap.open{
+        display: block;
+    }
+    nav{
+        grid-auto-flow: row;
+        justify-items: center;
+        gap: .5em;
+        height: unset;
+        padding: .5em;
+    }
+    nav .nav-link{
+        display: flex;
+        width: clamp(200px,70vw,300px);
+        height: 2em;
+        border: none;
+        background: rgba(0,0,100,.6);
+        color: #fff;
+        box-shadow: 1px 1px #fff;
+        animation: slide-in .5s calc(var(--delay) * .2s + .4s) both;
+    }
+    @keyframes slide-in {
+        from{
+            translate: 100vw;
+        }
+    }
+    nav .nav-link:hover{
+        scale: 1.01;
+        filter: brightness(200%);
+        box-shadow: 5px 3px #fff;
+        transition: .3s;
+    }
+    .nav-head{
+        display: block;
+        background: #fff;
+        animation: fade-in .5s;
+    }
+    @keyframes fade-in{
+        from{
+            translate: 0 20px;
+            opacity: 0;
+        }
+    }
+}
