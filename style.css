@@ -137,10 +137,13 @@ footer{
     display: none;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    inset: 0;
     background: rgba(255,255,255,100);
 }
 .alert-modal{
     display: grid;
+    justify-items: center;
     background: #fff;
     border: solid #000 5px;
 }
