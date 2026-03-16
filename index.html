@@ -56,6 +56,8 @@
         </div>
     </div>
     <script>
+        const navLink = document.querySelectorAll("nav .nav-link");
+        
         // カルーセルのアニメーション(クラス付け替え)
         const banner = document.querySelectorAll(".carousel img");
 
@@ -91,7 +93,6 @@
         });
 
         /* ナビゲーションに変数を設定 */
-        const navLink = document.querySelectorAll("nav .nav-link");
         for(let i = 0; i < navLink.length; i++){
             navLink[i].style.setProperty("--delay",i);
         }
@@ -102,6 +103,8 @@
             modalAlert.classList.add("active");
             // modalAlertText.
         }
+
+        navLink
     </script>
 </body>
 </html>
