@@ -135,7 +135,16 @@ footer{
 
 .alert{
     display: none;
+    justify-content: center;
+    align-items: center;
     background: #fff;
+    
+}
+.alert-modal{
+    a
+}
+.alert.active{
+    display: grid;
 }
 
 /* スマホ対応(ハンバーガーメニュー) */
