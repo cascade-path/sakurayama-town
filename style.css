@@ -211,7 +211,7 @@ footer{
     }
     .nav-head{
         display: block;
-        background: #fff;
+        background: #eee;
         animation: fade-in .5s;
     }
     @keyframes fade-in{
