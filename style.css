@@ -133,6 +133,11 @@ footer{
     background: #ccc;
 }
 
+.alert{
+    display: none;
+    background: #fff;
+}
+
 /* スマホ対応(ハンバーガーメニュー) */
 @media screen and (max-width: 500px) {
     .hamburger{
