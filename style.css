@@ -91,6 +91,7 @@ header h1{
 .carousel img{
     position: absolute;
     inset: 0;
+    width: 100%;
     background: #888;
     translate: -100%;
     transition: .5s;
