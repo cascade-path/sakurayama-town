@@ -26,7 +26,7 @@
     <div id="nav-wrap">
         <div class="nav-head">
             MENU
-            <div>close</div>
+            <div>~~~~~~~~~~~</div>
         </div>
         <nav>
             <div class="nav-link">タブ1</div>
@@ -52,7 +52,7 @@
     <div class="alert" id="modal-alert">
         <div class="alert-modal">
             <p>この機能は現在使用できません</p>
-            <button>close</button>
+            <button id="modal-alert-close">close</button>
         </div>
     </div>
     <script>
@@ -99,6 +99,7 @@
 
         /* alert */
         const modalAlert = document.getElementById("modal-alert");
+        const modalAlertClose = document.getElementById("modal-alert-close");
         function modalAlertActive(text){
             modalAlert.classList.add("active");
             // modalAlertText.
@@ -108,6 +109,10 @@
             link.addEventListener("click",() => {
                 modalAlertActive();
             });
+        });
+
+        modalAlertClose.addEventListener("click",() => {
+            modalAlert.ClassList.remove("active");
         });
     </script>
 </body>
