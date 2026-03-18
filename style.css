@@ -154,10 +154,9 @@ main .news{
     font-weight: bold;
 }
 .news-about{
-    color: #888;
+    color: blue;
 }
 .news-link:hover{
-    translate: 0 1px;
     text-shadow: #fad 0px 0px 10px;
     transition: .2s;
 }
@@ -262,9 +261,6 @@ footer{
     .news-link{
         padding: 5px;
         border: solid 2px #ccc;
-    }
-    .news-link:hover{
-        translate: 0;
     }
     .news-about{
         color: blue;
