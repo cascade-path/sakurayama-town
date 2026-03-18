@@ -126,6 +126,7 @@ nav .nav-link{
     display: none;
 }
 nav .nav-link:hover{
+    background: #aaa;
     text-shadow: 2px 2px #66f;
     transition: .3s;
 }
