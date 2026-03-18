@@ -249,7 +249,7 @@ footer{
     }
     nav .nav-link:hover{
         scale: 1.01;
-        filter: brightness(200%);
+        filter: brightness(120%);
         box-shadow: 5px 3px #fff;
         transition: .3s;
     }
