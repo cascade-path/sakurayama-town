@@ -6,7 +6,7 @@
 
         let index = 1;
 
-        banner[0].classList.add("active");
+        // banner[0].classList.add("active");
         function showNext() {
             banner[index].classList.remove("next");
             banner[index].classList.add("active");
