@@ -161,6 +161,9 @@ main .news{
     text-shadow: #fad 0px 0px 10px;
     transition: .2s;
 }
+.news-link:hover .news-about{
+    text-decoration: underline;
+}
 
 footer{
     height: 50px;
@@ -262,5 +265,11 @@ footer{
     }
     .news-link:hover{
         translate: 0;
+    }
+    .news-about{
+        color: blue;
+    }
+    .news-about:hover{
+        text-decoration: underline;
     }
 }
