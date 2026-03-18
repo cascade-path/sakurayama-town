@@ -148,6 +148,7 @@ main .news{
     border-radius: 10px;
 }
 .news-link{
+    cursor: pointer;
 }
 .news-title{
     font-weight: bold;
@@ -157,7 +158,7 @@ main .news{
 }
 .news-link:hover{
     scale: 1.01;
-    text-shadow: #fce 0px 0px 3px;
+    text-shadow: #fce 0px 0px 5px;
     transition: .2s;
 }
 
