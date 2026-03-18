@@ -177,6 +177,10 @@ main .news{
     text-decoration: underline;
 }
 
+article{
+    margin-bottom: 50px;
+}
+
 footer{
     padding: 50px;
     text-align: center;
