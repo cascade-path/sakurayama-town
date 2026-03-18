@@ -158,6 +158,7 @@ main .news{
 .news-link:hover{
     scale: 1.01;
     text-shadow: #fce 0px 0px 3px;
+    transition: .2s;
 }
 
 footer{
