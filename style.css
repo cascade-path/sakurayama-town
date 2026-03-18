@@ -142,18 +142,17 @@ main .news{
     display: grid;
     gap: 20px;
     padding: 20px;
-    background: #ccc;
-    border: double #888 10px;
+    background: #eee;
+    border: double #ccc 10px;
     border-radius: 10px;
 }
 .news-link{
-    background: #eee;
 }
 .news-title{
     font-weight: bold;
 }
 .news-about{
-    color: #ddd;
+    color: #888;
 }
 
 footer{
