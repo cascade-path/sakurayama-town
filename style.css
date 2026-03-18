@@ -153,6 +153,10 @@ main .news{
 .news-title{
     font-weight: bold;
 }
+.news-title time{
+    font-size: .9em;
+    margin-right: 1em;
+}
 .news-about{
     color: blue;
 }
@@ -161,6 +165,14 @@ main .news{
     transition: .2s;
 }
 .news-link:hover .news-about{
+    text-decoration: underline;
+}
+.news-showall{
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.news-showall:hover{
     text-decoration: underline;
 }
 
