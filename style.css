@@ -251,4 +251,12 @@ footer{
             opacity: 0;
         }
     }
+
+    .news{
+        padding: 5px;
+        gap: 5px;
+    }
+    .news-link{
+        border: solid 2px #ccc;
+    }
 }
