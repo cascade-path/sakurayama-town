@@ -139,8 +139,11 @@ main{
 }
 main .news{
     display: grid;
-    gap: 3px;
+    gap: 20px;
+    padding: 10px;
     background: blue;
+    border: double #888 10px;
+    border-radius: 10px;
 }
 .news-link{
     background: #eee;
