@@ -171,6 +171,7 @@ main .news{
     text-align: center;
     font-weight: bold;
     font-size: 1.1em;
+    cursor: pointer;
 }
 .news-showall:hover{
     text-decoration: underline;
