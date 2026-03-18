@@ -253,10 +253,14 @@ footer{
     }
 
     .news{
-        padding: 5px;
-        gap: 5px;
+        padding: 0;
+        gap: 0;
     }
     .news-link{
+        padding: 5px;
         border: solid 2px #ccc;
+    }
+    .news-link:hover{
+        translate: 0;
     }
 }
