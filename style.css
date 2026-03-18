@@ -155,7 +155,8 @@ main .news{
 .news-about{
     color: #888;
 }
-.news:hover{
+.news-link:hover{
+    scale: 1.01;
     text-shadow: #fce 0px 0px 3px;
 }
 
