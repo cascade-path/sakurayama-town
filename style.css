@@ -155,6 +155,9 @@ main .news{
 .news-about{
     color: #888;
 }
+.news:hover{
+    text-shadow: #fce 0px 0px 3px;
+}
 
 footer{
     height: 50px;
