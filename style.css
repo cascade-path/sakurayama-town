@@ -140,8 +140,8 @@ main{
 main .news{
     display: grid;
     gap: 20px;
-    padding: 10px;
-    background: blue;
+    padding: 20px;
+    background: #ccc;
     border: double #888 10px;
     border-radius: 10px;
 }
