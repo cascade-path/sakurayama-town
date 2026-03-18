@@ -4,7 +4,7 @@
         // カルーセルのアニメーション(クラス付け替え)
         const banner = document.querySelectorAll(".carousel img");
 
-        let index = 0;
+        let index = 1;
 
         banner[0].classList.add("active");
         function showNext() {
